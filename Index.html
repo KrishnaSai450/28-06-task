@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var center_tag = document.createElement("center");
+
+var name_tag = document.createElement("h1");
+name_tag.innerText = "Krishna Veg and Non-Veg Restaurant";
+
+center_tag.appendChild(name_tag);
+
+document.body.appendChild(center_tag);
+
+var hr = document.createElement("hr");
+document.body.appendChild(hr);
+
+var marquee1 = document.createElement("marquee");
+var marquee2 = document.createElement("marquee");
+
+marquee1.bgColor = "red";
+
+var special1 = document.createElement("p");
+special1.innerText = "Special Kaju and Panner Biryani: ";
+
+var special2 = document.createElement("p");
+special2.innerText = "Chicken Fry Piece Biryani: ";
+
+marquee1.appendChild(special1);
+marquee2.appendChild(special2);
+
+document.body.appendChild(marquee1);
+document.body.appendChild(marquee2);
+
+var veg_menu = document.createElement("h3");
+veg_menu.innerText = "Veg Menu";
+
+document.body.appendChild(veg_menu);
+
+var table1 = document.createElement("table")
+var table_row = document.createElement("tr");
+var table_data1 = document.createElement("td");
+table_data1.innerHTML = "Veg Biryani - 160";
+var table_data2 = document.createElement("td");
+table_data2.innerText = "Panner Biryani - 200";
+
+var table_row2 = document.createElement("tr");
+
+var table_data3 = document.createElement("td");
+table_data3.innerHTML = "Mushroom Biryani - 200";
+
+var table_data4 = document.createElement("td"); 
+table_data4.innerText = "Kaju and Panner Biryani - 250/-";
+
+table_row2.appendChild(table_data3);
+table_row2.appendChild(table_data4);
+
+
+table1.border = 1;
+table1.width = 1250;
+
+table_row.appendChild(table_data1);
+table_row.appendChild(table_data2);
+
+table1.appendChild(table_row);
+table1.appendChild(table_row2);
+
+
+
+
+
+
+var table2 = document.createElement("table");
+
+var table_row3 = document.createElement("tr");
+var table_data5 = document.createElement("td");
+table_data5.innerHTML = "Chicken Biryani - 200";
+var table_data6 = document.createElement("td");
+table_data6.innerText = "Mutton Biryani - 400";
+
+var table_row4 = document.createElement("tr");
+
+var table_data7 = document.createElement("td");
+table_data7.innerHTML = "Mandi Biryani - 800";
+
+var table_data8 = document.createElement("td");
+table_data8.innerText = "Special Fry Piece Biryani - 300/-";
+
+
+table2.border = 1;
+table2.width = 1250
+
+table_row3.appendChild(table_data5);
+table_row3.appendChild(table_data6);
+
+table_row4.appendChild(table_data7);
+table_row4.appendChild(table_data8);
+
+
+
+document.body.appendChild(table1);
+
+var Nonveg_menu = document.createElement("h3");
+Nonveg_menu.innerText = "Nonveg_menu";
+
+document.body.appendChild(Nonveg_menu);
+
+table2.appendChild(table_row3);
+
+table2.appendChild(table_row4);
+
+document.body.appendChild(table2);
+
+var images = document.createElement("summary");
+
+var details = document.createElement("details");
+
+var random = document.createElement("p");
+
+random.innerText = "Images";
+
+var image1 = document.createElement("img");
+
+image1.src = "https://tse2.mm.bing.net/th?id=OIP.wBu0Xsb774mtzvjhq1C3DgHaE8&pid=Api&P=0&h=180";
+
+var image2 = document.createElement("img")
+
+image2.src = "https://tse3.mm.bing.net/th?id=OIP.GQwrjEd8ntBZyz7F5Q7vNgHaE8&pid=Api&P=0&h=180";
+
+random.appendChild(image1);
+random.appendChild(image2);
+
+details.appendChild(random);
+
+images.appendChild(details)
+
+document.body.appendChild(images);
+    </script>
+</body>
+</html>
